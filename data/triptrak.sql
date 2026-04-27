@@ -57,6 +57,7 @@ CREATE TABLE alojamiento (
   emailAloj VARCHAR(100),
   telAloj VARCHAR(15),
   imgAloj VARCHAR(255),
+  reservAloj VARCHAR(255),
   mapAloj VARCHAR(255),
   idDest INT,
   FOREIGN KEY (idDest) REFERENCES destino(idDest) 
