@@ -1,30 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="TripTrakker: un planificador de viajes conexión a MySQL"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="M. Paz Jiménez Martín" />
-    <title>Sobre nosotros</title>
-    <link rel="icon" type="image/x-icon" href="./assets/images/MySQL.svg" />
-    <meta name="keywords" content="HTML5, CSS3, diseño web" />
-    <meta name="robots" content="index, follow" />
-    <link rel="stylesheet" href="./css/estilos.css" />
-  </head>
 
-  <body>
-    <header>
-      <h1>Sobre nosotros</h1>
-    </header>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="TripTrakker: un planificador de viajes conexión a MySQL">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="M. Paz Jiménez Martín">
+        <title>TripTrakker: un planificador de viajes conexión a MySQL con JavaScript y servidor Node.js</title>
+        <link rel="icon" type="image/x-icon" href="./assets/images/MySQL.svg">
+        <meta name="keywords" content="HTML5, CSS3, diseño web">
+        <meta name="robots" content="index, follow">
+        <link rel="stylesheet" href="./css/estilos.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>TripTrakker: un planificador de viajes conexión a MySQL con JavaScript y servidor Node.js</h1>
+        </header>
+
         <main>
             <div class="panel-lateral">
 
                 <div class="contenedor-BD">
-                    <img src="./assets/images/SQL_Database.svg" alt="Base de Datos" class="imagen-BD">
-                    <h2>Viajes</h2>
+                    <img src="./assets/images/SQL_Database.svg" alt="Viajes" class="imagen-viajes">
+                    <h2>Todos los viajes</h2>
                 </div>
 
                 <div class="contenedor-filtros">
@@ -34,7 +33,7 @@
 
                 <input type="text" id="busquedapordestino" placeholder="Buscar por destino...">
 
-                <button id="botonbuscartodo" class="boton-filtro">
+                 <button id="botonbuscartodo" class="boton-filtro">
                     <img src="./assets/images/viajes.png" alt="Mostrar todos" class="imagen-boton">
                     Mostrar todos los viajes
                 </button>
@@ -61,19 +60,16 @@
             </div>
 
             <div class="contenido-principal">
-                <h1>Usuarios recuperados</h1>
-                <div id="mensajesalida" class="contenedor-grid"></div>
+                <h1>Todos los viajes</h1>
+                <div id="viajes-list" class="contenedor-grid"></div>
             </div>
         </main>
 
-    <footer>
-      <p>
-        TripTrakker: un planificador de viajes conexión a MySQL con JavaScript y
-        servidor Node.js
-      </p>
-      <p>Una aplicación creada por una viajera para viajeros independientes.</p>
-    </footer>
+        <footer>
+            <p>TripTrakker: un planificador de viajes conexión a MySQL con JavaScript y servidor Node.js</p>
+            <p>Una aplicación creada por una viajera para viajeros independientes.</p>
+        </footer>
 
-    <script src="./js/javascript.js"></script>
-  </body>
+        <script src="./js/javascript.js"></script>
+    </body>
 </html>
