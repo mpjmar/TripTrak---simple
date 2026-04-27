@@ -57,5 +57,5 @@ backend/.env
 backend/node_modules/
 
 # Data dumps
-*.sql
-!data/triptrak.sql
+#*.sql
+#!data/triptrak.sql
