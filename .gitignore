@@ -58,4 +58,4 @@ backend/node_modules/
 
 # Data dumps
 *.sql
-!data/planificador_viajes.sql
+!data/triptrak.sql

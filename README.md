@@ -39,16 +39,32 @@ TripTrack es una aplicación web que permite a los usuarios planificar sus viaje
 
 ---
 
+
 ## 🗄️ Base de datos (MySQL)
 
-**Tablas utilizadas:**
-- viajes
-- destinos
-- actividades
+**Tablas principales:**
+- `viaje`: Información general de cada viaje (nombre, fecha inicio y fin).
+- `destino`: Lugares visitados en cada viaje (localización, ciudad, país, fechas, imágenes, mapas, id del viaje).
+- `punto_interes`: Actividades o lugares destacados dentro de cada destino (nombre, descripción, imagen, mapa, id del destino).
+- `alojamiento`: Alojamientos reservados en cada destino (nombre, tipo, dirección, precio, fechas, contacto, imagen, mapa, id del destino).
+- `nota`: Notas diarias asociadas a un viaje (nombre, fecha, día, plan, comentarios, id del viaje).
 
 **Relaciones:**
-- Un viaje → tiene varios destinos
-- Un destino → tiene varias actividades
+- Un `viaje` puede tener varios `destino` y varias `nota`.
+- Un `destino` pertenece a un `viaje` y puede tener varios `punto_interes` y varios `alojamiento`.
+- Un `punto_interes` pertenece a un `destino`.
+- Un `alojamiento` pertenece a un `destino`.
+- Una `nota` pertenece a un `viaje`.
+
+**Diagrama relacional simplificado:**
+
+viaje
+    ├── destino
+    │      ├── punto_interes
+    │      └── alojamiento
+    └── nota
+
+Las claves foráneas están configuradas con ON UPDATE/DELETE CASCADE para mantener la integridad referencial.
 
 ---
 
