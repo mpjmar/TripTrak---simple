@@ -1,75 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="TripTrakker: un planificador de viajes conexión a MySQL"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="M. Paz Jiménez Martín" />
+    <title>
+      TripTrakker: un planificador de viajes conexión a MySQL con JavaScript y
+      servidor Node.js
+    </title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/MySQL.svg" />
+    <meta name="keywords" content="HTML5, CSS3, diseño web" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="../css/estilos.css" />
+  </head>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="TripTrakker: un planificador de viajes conexión a MySQL">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="M. Paz Jiménez Martín">
-        <title>TripTrakker: un planificador de viajes conexión a MySQL con JavaScript y servidor Node.js</title>
-        <link rel="icon" type="image/x-icon" href="./assets/images/MySQL.svg">
-        <meta name="keywords" content="HTML5, CSS3, diseño web">
-        <meta name="robots" content="index, follow">
-        <link rel="stylesheet" href="./css/estilos.css">
-    </head>
+  <body>
+    <header>
+      <h1>Triptrakker</h1>
+    </header>
 
-    <body>
-        <header>
-            <h1>TripTrakker: un planificador de viajes conexión a MySQL con JavaScript y servidor Node.js</h1>
-        </header>
+    <main>
+      <nav class="panel-lateral">
+          <h2>Filtros</h2>
 
-        <main>
-            <div class="panel-lateral">
+          <button id="boton-buscar-todos" class="boton-filtro">
+            Mostrar todos los viajes
+          </button>
 
-                <div class="contenedor-BD">
-                    <img src="./assets/images/SQL_Database.svg" alt="Viajes" class="imagen-viajes">
-                    <h2>Todos los viajes</h2>
-                </div>
+          <button id="boton-busqueda-por-ciudad" class="boton-filtro">
+            Buscar viajes por país
+          </button>
 
-                <div class="contenedor-filtros">
-                    <img src="./assets/images/filters.png" alt="Filtros" class="imagen-filtros">
-                    <h2>Filtros</h2>
-                </div>
+          <button id="boton-insertar-viaje" class="boton-filtro">
+            Insertar un viaje
+          </button>
+          
+          <button id="boton-actualizar-viaje" class="boton-filtro">
+            Actualizar un viaje
+          </button>
 
-                <input type="text" id="busquedaporpais" placeholder="Buscar por país...">
+          <button id="boton-eliminar-viaje" class="boton-filtro">
+            Eiminar un viaje
+          </button>
 
-                 <button id="botonbuscartodos" class="boton-filtro">
-                    <img src="./assets/images/viajes.png" alt="Mostrar todos" class="imagen-boton">
-                    Mostrar todos los viajes
-                </button>
+      </nav>
 
-                <button id="botonbusquedaporciudad" class="boton-filtro">
-                    <img src="./assets/images/buscar.png" alt="Buscar por ciudad" class="imagen-boton">
-                    Buscar viajes por ciudad
-                </button>
+      <div class="contenido-principal">
+        <h1>Todos los viajes</h1>
+        <div id="lista-viajes" class="contenedor-grid"></div>
+      </div>
 
-                <button id="botoninsertarviaje" class="boton-filtro">
-                    <img src="./assets/images/agregar-viaje.png" alt="Insertar un viaje" class="imagen-boton">
-                    Insertar un viaje
-                </button>
+    </main>
 
-                <button id="botoneliminarviaje" class="boton-filtro">
-                    <img src="./assets/images/borrar-viaje.png" alt="Eiminar un viaje" class="imagen-boton">
-                    Eiminar un viaje
-                </button>
+    <footer>
+      <p>
+        TripTrakker: un planificador de viajes conexión a MySQL con JavaScript y
+        servidor Node.js
+      </p>
+      <p>Una aplicación creada por una viajera para viajeros independientes.</p>
+    </footer>
 
-                <button id="botonactualizarviaje" class="boton-filtro">
-                    <img src="./assets/images/editar-viaje.png" alt="Actualizar un viaje" class="imagen-boton">
-                    Actualizar un viaje
-                </button>
-            </div>
-
-            <div class="contenido-principal">
-                <h1>Todos los viajes</h1>
-                <div id="listaviajes" class="contenedor-grid"></div>
-            </div>
-        </main>
-
-        <footer>
-            <p>TripTrakker: un planificador de viajes conexión a MySQL con JavaScript y servidor Node.js</p>
-            <p>Una aplicación creada por una viajera para viajeros independientes.</p>
-        </footer>
-
-        <script src="./js/javascript.js"></script>
-    </body>
+    <script src="assets/js/javascript.js"></script>
+  </body>
 </html>
