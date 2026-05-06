@@ -1,13 +1,13 @@
 
 <div align="center">
-    <h1>🌍 TripTrack — Planificador de Viajes</h1>
+    <h1>🌍 TripTrakker — Planificador de Viajes</h1>
 </div>
 
 ---
 
 ## 🧠 Descripción
 
-TripTrack es una aplicación web que permite a los usuarios planificar sus viajes de forma sencilla. El usuario puede crear viajes, añadir destinos y organizar actividades dentro de cada destino.
+TripTrakker es una aplicación web que permite a los usuarios planificar sus viajes de forma sencilla. El usuario puede crear viajes, añadir destinos y organizar actividades dentro de cada destino.
 
 **Tecnologías aplicadas:**
 - HTML5
